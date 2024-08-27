@@ -1,6 +1,6 @@
 import json
 
-from backend.src.api.models import SimilarThemes, ThemeWithScore
+from backend.src.api.models import SimilarThemes, Theme, ThemeResponse
 from backend.src.api.services.graph import GraphService
 from backend.src.api.services.llm import LlmService
 
@@ -40,11 +40,10 @@ class ThemesService:
         self._graph_service = graph_service
         self._llm_service = llm_service
 
-    def find_similar_themes(self, theme: str, k=5) -> SimilarThemes:
+    def find_similar_themes(self, theme: str, k=3) -> SimilarThemes:
         theme_embedding = self._llm_service.create_embedding(theme)
-        candidate_themes = self._graph_service.find_similar_themes(theme_embedding, k)
-        selected_themes = self._select_most_similar_themes(theme, candidate_themes)
-        return SimilarThemes(candidate_themes, selected_themes)
+        similar_themes = self._graph_service.find_similar_themes(theme_embedding, k)
+        return SimilarThemes(self._build_themes_response(theme, similar_themes))
 
     def get_theme_answer(self, theme: str, similar_theme_id) -> str:
         similar_theme = self._graph_service.find_theme_by_id(similar_theme_id)
@@ -58,16 +57,28 @@ class ThemesService:
         )
         return self._llm_service.query_gpt4o_mini(prompt, requires_json_answer=False)
 
-    def _select_most_similar_themes(self, theme: str, candidate_themes: list[ThemeWithScore]) -> list[ThemeWithScore]:
+    def _build_themes_response(self, theme: str, similar_themes: list[(Theme, float)]) -> list[ThemeResponse]:
+        best_match_themes = self._get_best_match_theme_id(theme, [t for t, _ in similar_themes])
+        return [
+            ThemeResponse(
+                theme=t,
+                score=s,
+                is_best_match=t.semantic_id in best_match_themes,
+                answer=self.get_theme_answer(theme, t.semantic_id)
+            )
+            for t, s in similar_themes
+        ]
+
+    def _get_best_match_theme_id(self, theme: str, similar_themes: list[Theme]) -> list[str]:
         candidates_json = json.dumps([
             {
-                'id': c.theme.semantic_id,
-                'title': c.theme.title,
-                'description': c.theme.description,
-                'explanation': c.theme.explanation
+                'id': t.semantic_id,
+                'title': t.title,
+                'description': t.description,
+                'explanation': t.explanation
             }
-            for c in candidate_themes
+            for t in similar_themes
         ])
         prompt = _REFINE_PROMPT_TEMPLATE.format(requested_theme=theme, candidate_themes=candidates_json)
         answer = json.loads(self._llm_service.query_gpt4o_mini(prompt))
-        return list(filter(lambda x: x.theme.semantic_id in answer['ids'], candidate_themes))
+        return answer['ids']

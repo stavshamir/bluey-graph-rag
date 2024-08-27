@@ -13,15 +13,16 @@ class Theme:
 
 
 @dataclass
-class ThemeWithScore:
+class ThemeResponse:
     theme: Theme
     score: float
+    is_best_match: bool
+    answer: str
 
 
 @dataclass
 class SimilarThemes:
-    candidate_themes: list[ThemeWithScore]
-    selected_themes: list[ThemeWithScore]
+    themes: list[ThemeResponse]
 
 
 @dataclass

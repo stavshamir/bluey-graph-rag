@@ -1,6 +1,6 @@
 from neo4j import GraphDatabase
 
-from backend.src.api.models import Theme, Recap, ThemeWithScore
+from backend.src.api.models import Theme, Recap
 
 
 class GraphService:
@@ -19,7 +19,7 @@ class GraphService:
             self._driver.close()
             self._driver = None
 
-    def find_similar_themes(self, vector: list[float], k=5) -> list[ThemeWithScore]:
+    def find_similar_themes(self, vector: list[float], k=5) -> list[(Theme, float)]:
         with self._driver.session():
             cypher = f'''
             CALL db.index.vector.queryNodes("theme_index", {k}, {vector})
@@ -36,19 +36,16 @@ class GraphService:
                 score
             '''
 
-            def to_theme_with_score(d: dict) -> ThemeWithScore:
-                return ThemeWithScore(
-                    Theme(
-                        episode_title=d['episode_title'],
-                        episode_url=d['episode_url'],
-                        semantic_id=d['semantic_id'],
-                        title=d['title'],
-                        description=d['description'],
-                        explanation=d['explanation'],
-                        supporting_quotes=d['supporting_quotes'].split(';')
-                    ),
-                    d['score']
-                )
+            def to_theme_with_score(d: dict) -> (Theme, float):
+                return Theme(
+                    episode_title=d['episode_title'],
+                    episode_url=d['episode_url'],
+                    semantic_id=d['semantic_id'],
+                    title=d['title'],
+                    description=d['description'],
+                    explanation=d['explanation'],
+                    supporting_quotes=d['supporting_quotes'].split(';'),
+                ), d['score']
 
             records, _, _ = self._driver.execute_query(query_=cypher, database_="neo4j")
             return [to_theme_with_score(r.data()) for r in records]
@@ -84,5 +81,5 @@ class GraphService:
                 title=d['title'],
                 description=d['description'],
                 explanation=d['explanation'],
-                supporting_quotes=d['supporting_quotes'].split(';')
+                supporting_quotes=d['supporting_quotes'].split(';'),
             )
