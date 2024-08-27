@@ -6,14 +6,13 @@ import {
   Button,
   List,
   ListItem,
-  ListItemText,
-  Collapse,
   Typography,
   Paper,
   Box,
   CircularProgress,
   Alert,
-  Chip, // Add this line
+  Chip,
+  Divider
 } from '@mui/material';
 import { ExpandMore, ExpandLess, Star } from '@mui/icons-material';
 
@@ -156,7 +155,6 @@ const ThemeExplorer: React.FC = () => {
 
     return (
       <Box mt={4}>
-        <Typography variant="h6" gutterBottom>Similar Themes</Typography>
         <List>
           {data.map((item) => (
             <Paper key={item.id} elevation={1} sx={{ mb: 2, overflow: 'hidden' }}>
@@ -198,6 +196,15 @@ const ThemeExplorer: React.FC = () => {
               </ListItem>
               {expandedItem === item.id && (
                 <Box p={2} bgcolor="background.paper">
+                  <Box mb={2}>
+                    <Typography variant="body2">
+                      {item.answer}
+                    </Typography>
+                  </Box>
+                  <Divider style={{ margin: '16px 0' }} />
+                  <Typography variant="body2" paragraph>
+                    <strong>Description:</strong> {item.description}
+                  </Typography>
                   <Typography variant="body2" paragraph>
                     <strong>Explanation:</strong> {item.explanation}
                   </Typography>
@@ -210,11 +217,6 @@ const ThemeExplorer: React.FC = () => {
                         "{quote}"
                       </Typography>
                     ))}
-                  </Box>
-                  <Box mt={2}>
-                    <Typography variant="body2">
-                      <strong>Answer:</strong> {item.answer}
-                    </Typography>
                   </Box>
                 </Box>
               )}
@@ -240,7 +242,7 @@ const ThemeExplorer: React.FC = () => {
             disabled={isLoading}
           />
           <Button type="submit" variant="contained" disabled={isLoading}>
-            {isLoading ? <CircularProgress size={24} /> : 'Send'}
+            {isLoading ? <CircularProgress size={24} /> : 'Find'}
           </Button>
         </Box>
       </form>
