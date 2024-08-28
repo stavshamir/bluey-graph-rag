@@ -1,6 +1,6 @@
 import './App.css';
 import { ThemeProvider } from '@emotion/react';
-import { createTheme, CssBaseline, Box, Link, Typography, IconButton } from '@mui/material';
+import { createTheme, CssBaseline, Box, IconButton } from '@mui/material';
 import ThemeExplorer from './ThemeExplorer';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -47,7 +47,7 @@ function App() {
           <Box sx={{ display: 'flex' }}>
             <IconButton
               sx={{ color: 'white' }}
-              href="https://github.com/yourusername"
+              href="https://github.com/stavshamir/bluey-graph-rag"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"

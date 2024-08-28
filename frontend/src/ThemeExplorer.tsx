@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from "axios";
-import { Link } from '@mui/material'; // Add this import at the top of the file
-import OpenInNewIcon from '@mui/icons-material/OpenInNew'; // Add this import
+import { Link } from '@mui/material';
+import OpenInNewIcon from '@mui/icons-material/OpenInNew'; 
 
 import {
   TextField,
@@ -22,7 +22,7 @@ interface ThemeItem {
   id: string;
   title: string;
   episodeTitle: string;
-  episodeUrl: string; // Add this line
+  episodeUrl: string; 
   score: number;
   explanation: string;
   description?: string;
