@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import axios from "axios";
+import { Link } from '@mui/material'; // Add this import at the top of the file
+import OpenInNewIcon from '@mui/icons-material/OpenInNew'; // Add this import
 
 import {
   TextField,
@@ -20,6 +22,7 @@ interface ThemeItem {
   id: string;
   title: string;
   episodeTitle: string;
+  episodeUrl: string; // Add this line
   score: number;
   explanation: string;
   description?: string;
@@ -52,6 +55,8 @@ interface SimilarThemesResponse {
   }[];
 }
 
+axios.defaults.withCredentials = true;
+
 const ThemeExplorer: React.FC = () => {
   const [theme, setTheme] = useState<string>('');
   const [results, setResults] = useState<APIResponse | null>(null);
@@ -69,6 +74,7 @@ const ThemeExplorer: React.FC = () => {
         id: t.theme.semantic_id,
         title: t.theme.title,
         episodeTitle: t.theme.episode_title,
+        episodeUrl: `https://blueypedia.fandom.com${t.theme.episode_url}`,
         score: t.score,
         explanation: t.theme.explanation,
         description: t.theme.description,
@@ -187,9 +193,29 @@ const ThemeExplorer: React.FC = () => {
                         />
                       )}
                     </Box>
-                    <Typography variant="body2" color="text.secondary">
-                      {item.episodeTitle} | Score: {item.score.toFixed(2)}
-                    </Typography>
+                    <Box display="flex" alignItems="center">
+                      <Link
+                        href={item.episodeUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                        sx={{
+                          display: 'flex',
+                          alignItems: 'center',
+                          color: 'primary.main',
+                          textDecoration: 'underline',
+                          '&:hover': {
+                            textDecoration: 'none',
+                          },
+                        }}
+                      >
+                        <OpenInNewIcon sx={{ fontSize: 16, mr: 0.5 }} />
+                        {item.episodeTitle}
+                      </Link>
+                      <Typography variant="body2" color="text.secondary" sx={{ ml: 1 }}>
+                        | Score: {item.score.toFixed(2)}
+                      </Typography>
+                    </Box>
                   </Box>
                   {expandedItem === item.id ? <ExpandLess /> : <ExpandMore />}
                 </Box>
