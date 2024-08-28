@@ -65,6 +65,15 @@ const ThemeExplorer: React.FC = () => {
   const [error, setError] = useState<string | null>(null);
   const [expandedItems, setExpandedItems] = useState<Record<string, boolean>>({});
   const [answer, setAnswer] = useState<string | null>(null);
+  const suggestions = [
+    "The importance of cooperation",
+    "Recognizing the significance of guidelines",
+    "Solving conflicts between siblings"
+  ];
+
+  const handleSuggestionClick = (suggestion: string) => {
+    setTheme(suggestion);
+  };
 
   const getSimilarThemes = async (theme: string): Promise<APIResponse> => {
     const response = await axios.post<SimilarThemesResponse>('http://localhost:8000/themes/find_similar', { theme: theme });
@@ -270,6 +279,19 @@ const ThemeExplorer: React.FC = () => {
           <Button type="submit" variant="contained" disabled={isLoading}>
             {isLoading ? <CircularProgress size={24} /> : 'Find'}
           </Button>
+        </Box>
+        <Box display="flex" flexWrap="wrap" gap={1} mt={2}>
+          {suggestions.map((suggestion, index) => (
+            <Chip
+              key={index}
+              label={suggestion}
+              onClick={() => handleSuggestionClick(suggestion)}
+              disabled={isLoading}
+              clickable
+              color="primary"
+              variant="outlined"
+            />
+          ))}
         </Box>
       </form>
 
