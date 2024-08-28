@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from "axios";
 import { Link } from '@mui/material';
-import OpenInNewIcon from '@mui/icons-material/OpenInNew'; 
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
 import {
   TextField,
@@ -22,7 +22,7 @@ interface ThemeItem {
   id: string;
   title: string;
   episodeTitle: string;
-  episodeUrl: string; 
+  episodeUrl: string;
   score: number;
   explanation: string;
   description?: string;
@@ -60,11 +60,8 @@ axios.defaults.withCredentials = true;
 const ThemeExplorer: React.FC = () => {
   const [theme, setTheme] = useState<string>('');
   const [results, setResults] = useState<APIResponse | null>(null);
-  const [selectedTheme, setSelectedTheme] = useState<ThemeItem | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
-  const [expandedItems, setExpandedItems] = useState<Record<string, boolean>>({});
-  const [answer, setAnswer] = useState<string | null>(null);
   const suggestions = [
     "The importance of cooperation",
     "Recognizing the significance of guidelines",
@@ -94,21 +91,11 @@ const ThemeExplorer: React.FC = () => {
     };
   };
 
-  const getThemeAnswer = async (theme: string, similarThemeId: string): Promise<string> => {
-    const response = await axios.post<string>('http://localhost:8000/themes/answer', {
-      theme: theme,
-      similar_theme_id: similarThemeId
-    });
-    return response.data;
-  };
-
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsLoading(true);
     setError(null);
     setResults(null);
-    setSelectedTheme(null);
-    setExpandedItems({});
 
     try {
       const data = await getSimilarThemes(theme);
@@ -120,52 +107,11 @@ const ThemeExplorer: React.FC = () => {
     }
   };
 
-  const handleExpand = (id: string) => {
-    setExpandedItems(prev => ({ ...prev, [id]: !prev[id] }));
-  };
-
-  const handleSelectTheme = async (item: ThemeItem) => {
-    setSelectedTheme(item);
-    setAnswer(null);
-    setIsLoading(true);
-    setError(null);
-
-    try {
-      const answerText = await getThemeAnswer(theme, item.id);
-      setAnswer(answerText);
-    } catch (err) {
-      setError((err as Error).message);
-    } finally {
-      setIsLoading(false);
-    }
-  };
-
   const ResultList: React.FC<{ data: ThemeItem[]; theme: string }> = ({ data, theme }) => {
     const [expandedItem, setExpandedItem] = useState<string | null>(null);
-    const [loadingAnswer, setLoadingAnswer] = useState<string | null>(null);
 
     const handleExpand = (id: string) => {
       setExpandedItem(expandedItem === id ? null : id);
-    };
-
-    const handleGetAnswer = async (item: ThemeItem) => {
-      setLoadingAnswer(item.id);
-      try {
-        const answerText = await getThemeAnswer(theme, item.id);
-        setResults(prevResults => {
-          if (!prevResults) return prevResults;
-          return {
-            ...prevResults,
-            similarThemes: prevResults.similarThemes.map(t =>
-              t.id === item.id ? { ...t, answer: answerText } : t
-            )
-          };
-        });
-      } catch (err) {
-        console.error("Error fetching answer:", err);
-      } finally {
-        setLoadingAnswer(null);
-      }
     };
 
     return (
