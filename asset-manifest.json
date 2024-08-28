@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/bluey-graph-rag/static/css/main.02fec25b.css",
+    "main.js": "/bluey-graph-rag/static/js/main.ea5942d2.js",
+    "static/js/453.d855a71b.chunk.js": "/bluey-graph-rag/static/js/453.d855a71b.chunk.js",
+    "index.html": "/bluey-graph-rag/index.html",
+    "main.02fec25b.css.map": "/bluey-graph-rag/static/css/main.02fec25b.css.map",
+    "main.ea5942d2.js.map": "/bluey-graph-rag/static/js/main.ea5942d2.js.map",
+    "453.d855a71b.chunk.js.map": "/bluey-graph-rag/static/js/453.d855a71b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.02fec25b.css",
+    "static/js/main.ea5942d2.js"
+  ]
+}
