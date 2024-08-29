@@ -115,10 +115,16 @@ const ThemeExplorer: React.FC = () => {
       setExpandedItem(expandedItem === id ? null : id);
     };
 
+    const sortedData = [...data].sort((a, b) => {
+      if (a.isBestMatch && !b.isBestMatch) return -1;
+      if (!a.isBestMatch && b.isBestMatch) return 1;
+      return 0;
+    });
+
     return (
       <Box mt={4}>
         <List>
-          {data.map((item) => (
+          {sortedData.map((item) => (
             <Paper key={item.id} elevation={1} sx={{ mb: 2, overflow: 'hidden' }}>
               <ListItem
                 button
