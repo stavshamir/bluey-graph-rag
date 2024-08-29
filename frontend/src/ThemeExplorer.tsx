@@ -58,15 +58,16 @@ interface SimilarThemesResponse {
 axios.defaults.withCredentials = true;
 
 const ThemeExplorer: React.FC = () => {
-  const [theme, setTheme] = useState<string>('');
-  const [results, setResults] = useState<APIResponse | null>(null);
-  const [isLoading, setIsLoading] = useState<boolean>(false);
-  const [error, setError] = useState<string | null>(null);
   const suggestions = [
     "The importance of cooperation",
     "Recognizing the significance of guidelines",
     "Solving conflicts between siblings"
   ];
+  
+  const [theme, setTheme] = useState<string>(suggestions[0]);
+  const [results, setResults] = useState<APIResponse | null>(null);
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+  const [error, setError] = useState<string | null>(null);
 
   const handleSuggestionClick = (suggestion: string) => {
     setTheme(suggestion);

@@ -42,7 +42,11 @@ function App() {
           }}
         >
           <Box sx={{ height: '40px', flexGrow: 1 }}>
-            <img src="/Bluey_Icon.png" alt="Bluey Icon" style={{ height: '100%' }} />
+            <img 
+              src={`${process.env.PUBLIC_URL}/Bluey_Icon.png`} 
+              alt="Bluey Icon" 
+              style={{ height: '100%' }} 
+            />
           </Box>
           <Box sx={{ display: 'flex' }}>
             <IconButton
