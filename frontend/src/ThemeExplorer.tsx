@@ -74,7 +74,7 @@ const ThemeExplorer: React.FC = () => {
   };
 
   const getSimilarThemes = async (theme: string): Promise<APIResponse> => {
-    const response = await axios.post<SimilarThemesResponse>('http://localhost:8000/themes/find_similar', { theme: theme });
+    const response = await axios.post<SimilarThemesResponse>('https://bluey-graph-k5cjzeqrv-stav-shamirs-projects.vercel.app/themes/find_similar', { theme: theme });
 
     return {
       similarThemes: response.data.themes.map(t => ({

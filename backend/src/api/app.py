@@ -55,6 +55,11 @@ async def shutdown_event():
     graph_service.close()
 
 
+@app.get("/")
+async def health():
+    return 'healthy'
+
+
 @app.post("/themes/find_similar")
 async def find_similar_themes(request: FindSimilarThemesRequest):
     return asdict(themes_service.find_similar_themes(request.theme))
