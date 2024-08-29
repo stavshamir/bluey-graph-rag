@@ -3,3 +3,4 @@ beautifulsoup4~=4.12.3
 neo4j~=5.23.0
 openai~=1.37.2
 fastapi~=0.112.0
+uvicorn==0.20.0
