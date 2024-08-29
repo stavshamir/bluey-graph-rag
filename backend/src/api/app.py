@@ -9,14 +9,15 @@ from services.graph import GraphService
 from services.llm import LlmService
 from services.themes import ThemesService
 
-uri = os.environ.get("NEO4J_URI", "bolt://localhost:7687")
-username = os.environ.get("NEO4J_USERNAME", "neo4j")
-password = os.environ.get("NEO4J_PASSWORD", "stavshamir")
+uri = os.environ["NEO4J_URI"]
+username = os.environ["NEO4J_USERNAME"]
+password = os.environ["NEO4J_PASSWORD"]
 
 app = FastAPI()
 
 origins = [
     "http://localhost:3000",
+    "https://stavshamir.github.io/bluey-graph-rag/"
 ]
 
 app.add_middleware(
@@ -57,8 +58,3 @@ async def shutdown_event():
 @app.post("/themes/find_similar")
 async def find_similar_themes(request: FindSimilarThemesRequest):
     return asdict(themes_service.find_similar_themes(request.theme))
-
-
-@app.post("/themes/answer")
-async def theme_answer(request: ThemeAnswerRequest) -> str:
-    return themes_service.get_theme_answer(request.theme, request.similar_theme_id)
