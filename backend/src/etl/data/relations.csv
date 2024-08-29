@@ -1,0 +1,585 @@
+source_id,label,target_id,relation_type
+Character:Bandit_Heeler,IS_RELATIVE_OF,Character:Bluey_Heeler,father
+Character:Chilli_Heeler,IS_RELATIVE_OF,Character:Bluey_Heeler,mother
+Character:Bingo_Heeler,IS_RELATIVE_OF,Character:Bluey_Heeler,younger sister
+Character:Radley_Heeler,IS_RELATIVE_OF,Character:Bluey_Heeler,paternal-uncle
+Character:Frisky_Heeler,IS_RELATIVE_OF,Character:Bluey_Heeler,paternal aunt
+Character:Brandy_Cattle,IS_RELATIVE_OF,Character:Bluey_Heeler,maternal aunt
+Character:Stripe_Heeler,IS_RELATIVE_OF,Character:Bluey_Heeler,paternal-uncle
+Character:Trixie_Heeler,IS_RELATIVE_OF,Character:Bluey_Heeler,paternal-aunt
+Character:Muffin_Heeler,IS_RELATIVE_OF,Character:Bluey_Heeler,cousin
+Character:Socks_Heeler,IS_RELATIVE_OF,Character:Bluey_Heeler,cousin
+Character:Bob_Heeler,IS_RELATIVE_OF,Character:Bluey_Heeler,paternal-grandfather
+Character:Chris_Heeler,IS_RELATIVE_OF,Character:Bluey_Heeler,paternal-grandmother
+Character:Mort_Cattle,IS_RELATIVE_OF,Character:Bluey_Heeler,maternal-grandfather
+Character:Chilli%27s_Mum,IS_RELATIVE_OF,Character:Bluey_Heeler,maternal-grandmother
+Character:Chloe,IS_FRIEND_OF,Character:Bluey_Heeler,best friend
+Character:Rusty,IS_FRIEND_OF,Character:Bluey_Heeler,
+Character:Mackenzie_Border_Collie,IS_FRIEND_OF,Character:Bluey_Heeler,
+Character:Indy,IS_FRIEND_OF,Character:Bluey_Heeler,
+Character:Coco,IS_FRIEND_OF,Character:Bluey_Heeler,
+Character:Snickers,IS_FRIEND_OF,Character:Bluey_Heeler,
+Character:Honey,IS_FRIEND_OF,Character:Bluey_Heeler,
+Character:Lucky,IS_FRIEND_OF,Character:Bluey_Heeler,next door neighbour
+Character:Judo,IS_FRIEND_OF,Character:Bluey_Heeler,next door neighbour
+Character:Winnie,IS_FRIEND_OF,Character:Bluey_Heeler,neighbourhood friend
+Character:Mia,IS_FRIEND_OF,Character:Bluey_Heeler,big buddy
+Character:Jean-Luc,IS_FRIEND_OF,Character:Bluey_Heeler,
+Character:Winton,IS_FRIEND_OF,Character:Bluey_Heeler,
+Character:Jack_Russell,IS_FRIEND_OF,Character:Bluey_Heeler,
+Character:Pat,IS_FRIEND_OF,Character:Bluey_Heeler,next door neighbour
+Character:Janelle,IS_FRIEND_OF,Character:Bluey_Heeler,next door neighbour
+Character:Chucky,IS_FRIEND_OF,Character:Bluey_Heeler,next door neighbour
+Character:Buddy,IS_FRIEND_OF,Character:Bluey_Heeler,
+Character:The_Terriers,IS_FRIEND_OF,Character:Bluey_Heeler,
+Character:Pretzel,IS_FRIEND_OF,Character:Bluey_Heeler,
+Character:Bentley,IS_FRIEND_OF,Character:Bluey_Heeler,
+Character:Fido,IS_FRIEND_OF,Character:Bluey_Heeler,
+Character:Hercules,IS_FRIEND_OF,Character:Bluey_Heeler,
+Character:Pom_Pom,IS_FRIEND_OF,Character:Bluey_Heeler,
+Character:Maynard,IS_FRIEND_OF,Character:Bluey_Heeler,
+Character:Missy,IS_FRIEND_OF,Character:Bluey_Heeler,
+Character:Chilli_Heeler,IS_RELATIVE_OF,Character:Bandit_Heeler,wife
+Character:Bluey_Heeler,IS_RELATIVE_OF,Character:Bandit_Heeler,older daughter
+Character:Bingo_Heeler,IS_RELATIVE_OF,Character:Bandit_Heeler,younger daughter
+Character:Bob_Heeler,IS_RELATIVE_OF,Character:Bandit_Heeler,father
+Character:Chris_Heeler,IS_RELATIVE_OF,Character:Bandit_Heeler,mother
+Character:Radley_Heeler,IS_RELATIVE_OF,Character:Bandit_Heeler,older brother
+Character:Stripe_Heeler,IS_RELATIVE_OF,Character:Bandit_Heeler,younger brother
+Character:Trixie_Heeler,IS_RELATIVE_OF,Character:Bandit_Heeler,sister-in-law
+Character:Frisky_Heeler,IS_RELATIVE_OF,Character:Bandit_Heeler,sister-in-law
+Character:Muffin_Heeler,IS_RELATIVE_OF,Character:Bandit_Heeler,older niece
+Character:Socks_Heeler,IS_RELATIVE_OF,Character:Bandit_Heeler,younger niece
+Character:Brandy_Cattle,IS_RELATIVE_OF,Character:Bandit_Heeler,sister-in-law
+Character:Mort_Cattle,IS_RELATIVE_OF,Character:Bandit_Heeler,father-in-law
+Character:Chilli%27s_Mum,IS_RELATIVE_OF,Character:Bandit_Heeler,
+Character:Pat,IS_FRIEND_OF,Character:Bandit_Heeler,next door neighbour
+Character:Fido,IS_FRIEND_OF,Character:Bandit_Heeler,neighbourhood friend
+Character:Rocko,IS_FRIEND_OF,Character:Bandit_Heeler,
+Character:Mackenzie%27s_Dad,IS_FRIEND_OF,Character:Bandit_Heeler,
+Character:Mackenzie%27s_Mum,IS_FRIEND_OF,Character:Bandit_Heeler,
+Character:Janelle,IS_FRIEND_OF,Character:Bandit_Heeler,next door neighbour
+Character:Frank,IS_FRIEND_OF,Character:Bandit_Heeler,
+Character:Chloe%27s_Mum,IS_FRIEND_OF,Character:Bandit_Heeler,
+Character:Wendy,IS_FRIEND_OF,Character:Bandit_Heeler,next door neighbour
+Character:Marcus,IS_FRIEND_OF,Character:Bandit_Heeler,
+Character:Daisy,IS_FRIEND_OF,Character:Bandit_Heeler,
+Character:Indy%27s_Mum,IS_FRIEND_OF,Character:Bandit_Heeler,
+Character:Doreen,IS_FRIEND_OF,Character:Bandit_Heeler,
+Character:Bandit_Heeler,IS_RELATIVE_OF,Character:Bingo_Heeler,father
+Character:Chilli_Heeler,IS_RELATIVE_OF,Character:Bingo_Heeler,mother
+Character:Bluey_Heeler,IS_RELATIVE_OF,Character:Bingo_Heeler,older sister
+Character:Radley_Heeler,IS_RELATIVE_OF,Character:Bingo_Heeler,paternal uncle
+Character:Frisky_Heeler,IS_RELATIVE_OF,Character:Bingo_Heeler,paternal aunt
+Character:Stripe_Heeler,IS_RELATIVE_OF,Character:Bingo_Heeler,paternal uncle
+Character:Trixie_Heeler,IS_RELATIVE_OF,Character:Bingo_Heeler,paternal aunt
+Character:Muffin_Heeler,IS_RELATIVE_OF,Character:Bingo_Heeler,cousin
+Character:Socks_Heeler,IS_RELATIVE_OF,Character:Bingo_Heeler,cousin
+Character:Brandy_Cattle,IS_RELATIVE_OF,Character:Bingo_Heeler,maternal aunt
+Character:Bob_Heeler,IS_RELATIVE_OF,Character:Bingo_Heeler,paternal grandfather
+Character:Chris_Heeler,IS_RELATIVE_OF,Character:Bingo_Heeler,paternal grandmother
+Character:Mort_Cattle,IS_RELATIVE_OF,Character:Bingo_Heeler,maternal grandfather
+Character:Chilli%27s_Mum,IS_RELATIVE_OF,Character:Bingo_Heeler,
+Character:Lila,IS_FRIEND_OF,Character:Bingo_Heeler,best friend
+Character:Lucky,IS_FRIEND_OF,Character:Bingo_Heeler,next door neighbour
+Character:Chucky,IS_FRIEND_OF,Character:Bingo_Heeler,next door neighbour
+Character:Indy,IS_FRIEND_OF,Character:Bingo_Heeler,
+Character:Coco,IS_FRIEND_OF,Character:Bingo_Heeler,
+Character:Snickers,IS_FRIEND_OF,Character:Bingo_Heeler,
+Character:Honey,IS_FRIEND_OF,Character:Bingo_Heeler,
+Character:Mackenzie_Border_Collie,IS_FRIEND_OF,Character:Bingo_Heeler,
+Character:Chloe,IS_FRIEND_OF,Character:Bingo_Heeler,
+Character:Judo,IS_FRIEND_OF,Character:Bingo_Heeler,next door neighbour
+Character:Rusty,IS_FRIEND_OF,Character:Bingo_Heeler,
+Character:Buddy,IS_FRIEND_OF,Character:Bingo_Heeler,
+Character:Juniper,IS_FRIEND_OF,Character:Bingo_Heeler,
+Character:Bentley,IS_FRIEND_OF,Character:Bingo_Heeler,
+Character:Missy,IS_FRIEND_OF,Character:Bingo_Heeler,
+Character:Maynard,IS_FRIEND_OF,Character:Bingo_Heeler,
+Character:Jasper_G.,IS_FRIEND_OF,Character:Bingo_Heeler,
+Character:Jasper_W.,IS_FRIEND_OF,Character:Bingo_Heeler,
+Character:Hercules,IS_FRIEND_OF,Character:Bingo_Heeler,
+Character:Winton,IS_FRIEND_OF,Character:Bingo_Heeler,
+Character:Winnie,IS_FRIEND_OF,Character:Bingo_Heeler,
+Character:The_Terriers,IS_FRIEND_OF,Character:Bingo_Heeler,
+Character:Bandit_Heeler,IS_RELATIVE_OF,Character:Chilli_Heeler,husband
+Character:Bluey_Heeler,IS_RELATIVE_OF,Character:Chilli_Heeler,older daughter
+Character:Bingo_Heeler,IS_RELATIVE_OF,Character:Chilli_Heeler,younger daughter
+Character:Mort_Cattle,IS_RELATIVE_OF,Character:Chilli_Heeler,father
+Character:Chilli%27s_Mum,IS_RELATIVE_OF,Character:Chilli_Heeler,deceased
+Character:Brandy_Cattle,IS_RELATIVE_OF,Character:Chilli_Heeler,older sister
+Character:Stripe_Heeler,IS_RELATIVE_OF,Character:Chilli_Heeler,brother-in-law
+Character:Rad_Heeler,IS_RELATIVE_OF,Character:Chilli_Heeler,brother-in-law
+Character:Frisky_Heeler,IS_RELATIVE_OF,Character:Chilli_Heeler,co-sister-in-law
+Character:Trixie_Heeler,IS_RELATIVE_OF,Character:Chilli_Heeler,co-sister-in-law
+Character:Muffin_Heeler,IS_RELATIVE_OF,Character:Chilli_Heeler,older niece
+Character:Socks_Heeler,IS_RELATIVE_OF,Character:Chilli_Heeler,younger niece
+Character:Bob_Heeler,IS_RELATIVE_OF,Character:Chilli_Heeler,father-in-law
+Character:Chris_Heeler,IS_RELATIVE_OF,Character:Chilli_Heeler,mother-in-law
+Character:Daisy,IS_FRIEND_OF,Character:Chilli_Heeler,
+Character:Mackenzie%27s_Mum,IS_FRIEND_OF,Character:Chilli_Heeler,
+Character:Chloe%27s_Mum,IS_FRIEND_OF,Character:Chilli_Heeler,
+Character:Snickers%27_Mum,IS_FRIEND_OF,Character:Chilli_Heeler,
+Character:Bella,IS_FRIEND_OF,Character:Chilli_Heeler,
+Character:Wendy,IS_FRIEND_OF,Character:Chilli_Heeler,next door neighbour
+Character:Frisky_Heeler,IS_FRIEND_OF,Character:Chilli_Heeler,"prior to ""The Sign"", now her co-sister-in-law"
+Character:The_Sign,IS_FRIEND_OF,Character:Chilli_Heeler,
+Character:Maynard,IS_FRIEND_OF,Character:Chilli_Heeler,
+Character:Pat,IS_FRIEND_OF,Character:Chilli_Heeler,next door neighbour
+Character:Janelle,IS_FRIEND_OF,Character:Chilli_Heeler,next door neighbour
+Character:Coco,IS_RELATIVE_OF,Character:Bella,daughter
+Character:Chilli_Heeler,IS_FRIEND_OF,Character:Bella,
+Character:Snickers%27_Mum,IS_FRIEND_OF,Character:Bella,
+Character:Wendy,IS_FRIEND_OF,Character:Bella,
+Character:Zara,IS_RELATIVE_OF,Character:Bentley,twin sister
+Character:Bingo_Heeler,IS_FRIEND_OF,Character:Bentley,
+Character:Bluey_Heeler,IS_FRIEND_OF,Character:Bentley,
+Character:Chris_Heeler,IS_RELATIVE_OF,Character:Bob_Heeler,wife
+Character:Rad_Heeler,IS_RELATIVE_OF,Character:Bob_Heeler,eldest son
+Character:Bandit_Heeler,IS_RELATIVE_OF,Character:Bob_Heeler,middle son
+Character:Stripe_Heeler,IS_RELATIVE_OF,Character:Bob_Heeler,youngest son
+Character:Chilli_Heeler,IS_RELATIVE_OF,Character:Bob_Heeler,daughter-in-law
+Character:Bluey_Heeler,IS_RELATIVE_OF,Character:Bob_Heeler,oldest granddaughter
+Character:Bingo_Heeler,IS_RELATIVE_OF,Character:Bob_Heeler,second oldest granddaughter
+Character:Trixie_Heeler,IS_RELATIVE_OF,Character:Bob_Heeler,daughter-in-law
+Character:Frisky_Heeler,IS_RELATIVE_OF,Character:Bob_Heeler,daughter-in-law
+Character:Muffin_Heeler,IS_RELATIVE_OF,Character:Bob_Heeler,third oldest granddaughter
+Character:Socks_Heeler,IS_RELATIVE_OF,Character:Bob_Heeler,youngest granddaughter
+Character:Mort_Cattle,IS_RELATIVE_OF,Character:Bob_Heeler,co-father-in-law
+Character:Chilli%27s_Mum,IS_RELATIVE_OF,Character:Bob_Heeler,co-mother-in-law
+Character:Mort_Cattle,IS_RELATIVE_OF,Character:Brandy_Cattle,father
+Character:Chilli%27s_Mum,IS_RELATIVE_OF,Character:Brandy_Cattle,mother
+Character:Chilli_Heeler,IS_RELATIVE_OF,Character:Brandy_Cattle,younger sister
+Character:Bandit_Heeler,IS_RELATIVE_OF,Character:Brandy_Cattle,brother-in-law
+Character:Bluey_Heeler,IS_RELATIVE_OF,Character:Brandy_Cattle,older niece
+Character:Bingo_Heeler,IS_RELATIVE_OF,Character:Brandy_Cattle,younger niece
+Character:Stripe_Heeler,IS_FRIEND_OF,Character:Brandy_Cattle,
+Character:Trixie_Heeler,IS_FRIEND_OF,Character:Brandy_Cattle,
+Character:Frisky_Heeler,IS_FRIEND_OF,Character:Brandy_Cattle,conceivably
+Character:Bluey_Wiki#cite_note-1,IS_FRIEND_OF,Character:Brandy_Cattle,
+Character:Buddy%27s_Mum,IS_RELATIVE_OF,Character:Buddy,mother
+Character:Bingo_Heeler,IS_FRIEND_OF,Character:Buddy,
+Character:Bluey_Heeler,IS_FRIEND_OF,Character:Buddy,
+Character:Chucky,IS_FRIEND_OF,Character:Buddy,
+Character:Pom_Pom,IS_FRIEND_OF,Character:Buddy,
+Character:Buddy,IS_RELATIVE_OF,Character:Buddy%27s_Mum,son
+Character:Chilli_Heeler,IS_FRIEND_OF,Character:Buddy%27s_Mum,
+Character:Bandit_Heeler,IS_FRIEND_OF,Character:Buddy%27s_Mum,
+Character:Pat,IS_FRIEND_OF,Character:Buddy%27s_Mum,
+Character:Janelle,IS_FRIEND_OF,Character:Buddy%27s_Mum,
+Character:Sheila,IS_FRIEND_OF,Character:Buddy%27s_Mum,
+Character:Pom_Pom%27s_Mum,IS_FRIEND_OF,Character:Buddy%27s_Mum,
+Character:Jasper_G.%27s_Mum,IS_FRIEND_OF,Character:Buddy%27s_Mum,
+Character:Mackenzie_Border_Collie,IS_FRIEND_OF,Character:Captain,school buddy
+Character:Mia,IS_FRIEND_OF,Character:Captain,crush
+Character:Bluey_Heeler,IS_FRIEND_OF,Character:Captain,
+Character:Digger,IS_FRIEND_OF,Character:Captain,
+Character:Tiny_C.,IS_FRIEND_OF,Character:Captain,
+Character:Cherry,IS_FRIEND_OF,Character:Chippy,girlfriend
+Character:Sparky,IS_FRIEND_OF,Character:Chippy,boss
+Character:Frank,IS_RELATIVE_OF,Character:Chloe,father
+Character:Chloe%27s_Mum,IS_RELATIVE_OF,Character:Chloe,mother
+Character:Bluey_Heeler,IS_FRIEND_OF,Character:Chloe,best friend
+Character:Bingo_Heeler,IS_FRIEND_OF,Character:Chloe,
+Character:Mackenzie_Border_Collie,IS_FRIEND_OF,Character:Chloe,
+Character:Indy,IS_FRIEND_OF,Character:Chloe,
+Character:Honey,IS_FRIEND_OF,Character:Chloe,
+Character:Rusty,IS_FRIEND_OF,Character:Chloe,
+Character:Coco,IS_FRIEND_OF,Character:Chloe,
+Character:Pom_Pom,IS_FRIEND_OF,Character:Chloe,
+Character:Snickers,IS_FRIEND_OF,Character:Chloe,
+Character:Chucky,IS_FRIEND_OF,Character:Chloe,
+Character:Lucky,IS_FRIEND_OF,Character:Chloe,
+Character:Frank,IS_RELATIVE_OF,Character:Chloe%27s_Mum,husband
+Character:Chloe,IS_RELATIVE_OF,Character:Chloe%27s_Mum,daughter
+Character:Bandit_Heeler,IS_FRIEND_OF,Character:Chloe%27s_Mum,
+Character:Chilli_Heeler,IS_FRIEND_OF,Character:Chloe%27s_Mum,
+Character:Mackenzie%27s_Dad,IS_FRIEND_OF,Character:Chloe%27s_Mum,
+Character:Mackenzie%27s_Mum,IS_FRIEND_OF,Character:Chloe%27s_Mum,
+Character:Marcus,IS_FRIEND_OF,Character:Chloe%27s_Mum,
+Character:Daisy,IS_FRIEND_OF,Character:Chloe%27s_Mum,
+Character:Bob_Heeler,IS_RELATIVE_OF,Character:Chris_Heeler,husband
+Character:Radley_Heeler,IS_RELATIVE_OF,Character:Chris_Heeler,oldest son
+Character:Bandit_Heeler,IS_RELATIVE_OF,Character:Chris_Heeler,middle son
+Character:Stripe_Heeler,IS_RELATIVE_OF,Character:Chris_Heeler,youngest son
+Character:Chilli_Heeler,IS_RELATIVE_OF,Character:Chris_Heeler,daughter-in-law
+Character:Bluey_Heeler,IS_RELATIVE_OF,Character:Chris_Heeler,oldest granddaughter
+Character:Bingo_Heeler,IS_RELATIVE_OF,Character:Chris_Heeler,second oldest granddaughter
+Character:Trixie_Heeler,IS_RELATIVE_OF,Character:Chris_Heeler,daughter-in-law
+Character:Frisky_Heeler,IS_RELATIVE_OF,Character:Chris_Heeler,daughter-in-law
+Character:Muffin_Heeler,IS_RELATIVE_OF,Character:Chris_Heeler,third oldest granddaughter
+Character:Socks_Heeler,IS_RELATIVE_OF,Character:Chris_Heeler,youngest granddaughter
+Character:Mort_Cattle,IS_RELATIVE_OF,Character:Chris_Heeler,co-father-in-law
+Character:Pat,IS_RELATIVE_OF,Character:Chucky,father
+Character:Janelle,IS_RELATIVE_OF,Character:Chucky,mother
+Character:Lucky,IS_RELATIVE_OF,Character:Chucky,older brother
+Character:Bingo_Heeler,IS_FRIEND_OF,Character:Chucky,
+Character:Lila,IS_FRIEND_OF,Character:Chucky,
+Character:Missy,IS_FRIEND_OF,Character:Chucky,
+Character:Bluey_Heeler,IS_FRIEND_OF,Character:Chucky,
+Character:Muffin_Heeler,IS_FRIEND_OF,Character:Chucky,
+Character:Buddy,IS_FRIEND_OF,Character:Chucky,
+Character:Pom_Pom,IS_FRIEND_OF,Character:Chucky,
+Character:Chloe,IS_FRIEND_OF,Character:Chucky,
+Character:Juniper,IS_FRIEND_OF,Character:Chucky,
+Character:Jasper_G.,IS_FRIEND_OF,Character:Chucky,
+Character:Pom_Pom%27s_Mum,IS_FRIEND_OF,Character:Chucky,
+Character:Sheila,IS_FRIEND_OF,Character:Chucky,
+Character:Mackenzie_Border_Collie,IS_FRIEND_OF,Character:Chucky,
+Character:Honey,IS_FRIEND_OF,Character:Chucky,
+Character:Bella,IS_RELATIVE_OF,Character:Coco,mother
+Character:Indy,IS_FRIEND_OF,Character:Coco,best friend
+Character:Bluey_Heeler,IS_FRIEND_OF,Character:Coco,
+Character:Bingo_Heeler,IS_FRIEND_OF,Character:Coco,
+Character:Mackenzie_Border_Collie,IS_FRIEND_OF,Character:Coco,
+Character:Rusty,IS_FRIEND_OF,Character:Coco,
+Character:Honey,IS_FRIEND_OF,Character:Coco,
+Character:Snickers,IS_FRIEND_OF,Character:Coco,
+Character:Chloe,IS_FRIEND_OF,Character:Coco,
+Character:The_Terriers,IS_FRIEND_OF,Character:Coco,
+Character:Hercules,IS_FRIEND_OF,Character:Coco,
+Character:Pom_Pom,IS_FRIEND_OF,Character:Coco,
+Character:Jack_Russell,IS_FRIEND_OF,Character:Coco,
+Character:Winton,IS_RELATIVE_OF,Character:Cornelius,son
+Character:Terriers%27_Mum,IS_FRIEND_OF,Character:Cornelius,girlfriend
+Character:Rusty%27s_Dad,IS_RELATIVE_OF,Character:Digger,father
+Character:Rusty%27s_Mum,IS_RELATIVE_OF,Character:Digger,mother
+Character:Dusty,IS_RELATIVE_OF,Character:Digger,younger sister
+Character:Rusty,IS_RELATIVE_OF,Character:Digger,younger brother
+Character:Tiny_C.,IS_FRIEND_OF,Character:Digger,
+Character:Captain,IS_FRIEND_OF,Character:Digger,
+Character:Mia,IS_FRIEND_OF,Character:Digger,
+Character:Wicket-keeper,IS_FRIEND_OF,Character:Digger,
+Character:Dougie%27s_Mum,IS_RELATIVE_OF,Character:Dougie,
+Character:Bingo_Heeler,IS_FRIEND_OF,Character:Dougie,
+Character:Bluey_Wiki#cite_note-DT-2,IS_FRIEND_OF,Character:Dougie,
+Character:Dougie,IS_RELATIVE_OF,Character:Dougie%27s_Mum,son
+Character:Rusty%27s_Dad,IS_RELATIVE_OF,Character:Dusty,father
+Character:Rusty%27s_Mum,IS_RELATIVE_OF,Character:Dusty,mother
+Character:Rusty,IS_RELATIVE_OF,Character:Dusty,older brother
+Character:Digger,IS_RELATIVE_OF,Character:Dusty,oldest brother
+Character:Winnie,IS_RELATIVE_OF,Character:Fido,daughter
+Character:Bandit_Heeler,IS_FRIEND_OF,Character:Fido,
+Character:Chloe,IS_RELATIVE_OF,Character:Frank,daughter
+Character:Chloe%27s_Mum,IS_RELATIVE_OF,Character:Frank,wife
+Character:Chilli_Heeler,IS_FRIEND_OF,Character:Frank,
+Character:Bandit_Heeler,IS_FRIEND_OF,Character:Frank,
+Character:Mackenzie%27s_Dad,IS_FRIEND_OF,Character:Frank,
+Character:Mackenzie%27s_Mum,IS_FRIEND_OF,Character:Frank,
+Character:Marcus,IS_FRIEND_OF,Character:Frank,
+Character:Daisy,IS_FRIEND_OF,Character:Frank,
+Character:Bluey_Heeler,IS_RELATIVE_OF,Character:Frisky_Heeler,goddaughter and niece
+Character:Radley_Heeler,IS_RELATIVE_OF,Character:Frisky_Heeler,husband
+Character:Bandit_Heeler,IS_RELATIVE_OF,Character:Frisky_Heeler,brother-in-law
+Character:Chilli_Heeler,IS_RELATIVE_OF,Character:Frisky_Heeler,co-sister-in-law
+Character:Bingo_Heeler,IS_RELATIVE_OF,Character:Frisky_Heeler,niece
+Character:Trixie_Heeler,IS_RELATIVE_OF,Character:Frisky_Heeler,co-sister-in-law
+Character:Stripe_Heeler,IS_RELATIVE_OF,Character:Frisky_Heeler,brother-in-law
+Character:Muffin_Heeler,IS_RELATIVE_OF,Character:Frisky_Heeler,niece
+Character:Socks_Heeler,IS_RELATIVE_OF,Character:Frisky_Heeler,niece
+Character:Chris_Heeler,IS_RELATIVE_OF,Character:Frisky_Heeler,mother-in-law
+Character:Bob_Heeler,IS_RELATIVE_OF,Character:Frisky_Heeler,father-in-law
+Character:Cookie_(The_Sign),IS_FRIEND_OF,Character:Frisky_Heeler,
+Character:Snickers%27_Mum,IS_FRIEND_OF,Character:Frisky_Heeler,
+Character:Gruber,IS_RELATIVE_OF,Character:Gruber%27s_Dad,son
+Character:Bluey_Heeler,IS_FRIEND_OF,Character:Hercules,
+Character:Mackenzie_Border_Collie,IS_FRIEND_OF,Character:Hercules,
+Character:Coco,IS_FRIEND_OF,Character:Hercules,
+Character:Bingo_Heeler,IS_FRIEND_OF,Character:Hercules,
+Character:Honey,IS_FRIEND_OF,Character:Hercules,
+Character:Winton,IS_FRIEND_OF,Character:Hercules,
+Character:Marcus,IS_RELATIVE_OF,Character:Honey,father
+Character:Daisy,IS_RELATIVE_OF,Character:Honey,mother
+Character:Bluey_Heeler,IS_FRIEND_OF,Character:Honey,
+Character:Coco,IS_FRIEND_OF,Character:Honey,
+Character:Chloe,IS_FRIEND_OF,Character:Honey,
+Character:Mackenzie_Border_Collie,IS_FRIEND_OF,Character:Honey,
+Character:Indy,IS_FRIEND_OF,Character:Honey,
+Character:Bingo_Heeler,IS_FRIEND_OF,Character:Honey,
+Character:Rusty,IS_FRIEND_OF,Character:Honey,
+Character:Hercules,IS_FRIEND_OF,Character:Honey,
+Character:Snickers,IS_FRIEND_OF,Character:Honey,
+Character:The_Terriers,IS_FRIEND_OF,Character:Honey,
+Character:Indy%27s_Mum,IS_RELATIVE_OF,Character:Indy,mother
+Character:Mums_and_Dads,IS_RELATIVE_OF,Character:Indy,
+Character:Early_Baby,IS_RELATIVE_OF,Character:Indy,
+Character:Coco,IS_FRIEND_OF,Character:Indy,best friend
+Character:Bluey_Heeler,IS_FRIEND_OF,Character:Indy,
+Character:Bingo_Heeler,IS_FRIEND_OF,Character:Indy,
+Character:Chloe,IS_FRIEND_OF,Character:Indy,
+Character:Honey,IS_FRIEND_OF,Character:Indy,
+Character:Rusty,IS_FRIEND_OF,Character:Indy,
+Character:Gruber,IS_FRIEND_OF,Character:Indy,
+Character:Winton,IS_FRIEND_OF,Character:Indy,
+Character:Snickers,IS_FRIEND_OF,Character:Indy,
+Character:The_Terriers,IS_FRIEND_OF,Character:Indy,
+Character:Mackenzie_Border_Collie,IS_FRIEND_OF,Character:Indy,
+Character:Jack%27s_Dad,IS_RELATIVE_OF,Character:Jack_Russell,
+Character:Jack%27s_Mum,IS_RELATIVE_OF,Character:Jack_Russell,
+Character:Lulu_Russell,IS_RELATIVE_OF,Character:Jack_Russell,younger sister
+Character:Rusty,IS_FRIEND_OF,Character:Jack_Russell,best friend
+Character:Bluey_Heeler,IS_FRIEND_OF,Character:Jack_Russell,
+Character:Coco,IS_FRIEND_OF,Character:Jack_Russell,
+Character:Mackenzie_Border_Collie,IS_FRIEND_OF,Character:Jack_Russell,
+Character:Jack%27s_Mum,IS_RELATIVE_OF,Character:Jack%27s_Dad,wife
+Character:Jack_Russell,IS_RELATIVE_OF,Character:Jack%27s_Dad,son
+Character:Lulu_Russell,IS_RELATIVE_OF,Character:Jack%27s_Dad,daughter
+Character:Jack%27s_Dad,IS_RELATIVE_OF,Character:Jack%27s_Mum,husband
+Character:Jack_Russell,IS_RELATIVE_OF,Character:Jack%27s_Mum,son
+Character:Lulu_Russell,IS_RELATIVE_OF,Character:Jack%27s_Mum,daughter
+Character:Pat,IS_RELATIVE_OF,Character:Janelle,husband
+Character:Lucky,IS_RELATIVE_OF,Character:Janelle,older son
+Character:Chucky,IS_RELATIVE_OF,Character:Janelle,younger son
+Character:Chilli_Heeler,IS_FRIEND_OF,Character:Janelle,
+Character:Bandit_Heeler,IS_FRIEND_OF,Character:Janelle,
+Character:Buddy%27s_Mum,IS_FRIEND_OF,Character:Janelle,
+Character:Jasper_G.,IS_RELATIVE_OF,Character:Jasper_G.%27s_Mum,son
+Character:Chilli_Heeler,IS_FRIEND_OF,Character:Jasper_G.%27s_Mum,
+Character:Bandit_Heeler,IS_FRIEND_OF,Character:Jasper_G.%27s_Mum,
+Character:Pat,IS_FRIEND_OF,Character:Jasper_G.%27s_Mum,
+Character:Janelle,IS_FRIEND_OF,Character:Jasper_G.%27s_Mum,
+Character:Sheila,IS_FRIEND_OF,Character:Jasper_G.%27s_Mum,
+Character:Pom_Pom%27s_Mum,IS_FRIEND_OF,Character:Jasper_G.%27s_Mum,
+Character:Buddy%27s_Mum,IS_FRIEND_OF,Character:Jasper_G.%27s_Mum,
+Character:Jasper_G.,IS_FRIEND_OF,Character:Jasper_W.,best friend
+Character:Bingo_Heeler,IS_FRIEND_OF,Character:Jasper_W.,
+Character:Lila,IS_FRIEND_OF,Character:Jasper_W.,
+Character:Juniper,IS_FRIEND_OF,Character:Jasper_W.,
+Character:Buddy,IS_FRIEND_OF,Character:Jasper_W.,
+Character:Bentley,IS_FRIEND_OF,Character:Jasper_W.,
+Character:Zara,IS_FRIEND_OF,Character:Jasper_W.,
+Character:Missy,IS_FRIEND_OF,Character:Jasper_W.,
+Character:Harley,IS_FRIEND_OF,Character:Jasper_W.,
+Character:Jean-Luc%27s_Dad,IS_RELATIVE_OF,Character:Jean-Luc,father
+Character:Bluey_Heeler,IS_FRIEND_OF,Character:Jean-Luc,
+Character:Jean-Luc,IS_RELATIVE_OF,Character:Jean-Luc%27s_Dad,son
+Character:Wendy,IS_RELATIVE_OF,Character:Judo,mother
+Character:Sheepdog,IS_RELATIVE_OF,Character:Judo,
+Character:Bluey_Heeler,IS_FRIEND_OF,Character:Judo,next door neighbour
+Character:Bingo_Heeler,IS_FRIEND_OF,Character:Judo,next door neighbour
+Character:Pom_Pom,IS_FRIEND_OF,Character:Judo,conceivably
+Character:Coco,IS_FRIEND_OF,Character:Judo,conceivably
+Character:Snickers,IS_FRIEND_OF,Character:Judo,conceivably
+Character:Juniper%27s_Mum,IS_RELATIVE_OF,Character:Juniper,mother
+Character:Muffin_Heeler,IS_FRIEND_OF,Character:Juniper,
+Character:Juniper,IS_RELATIVE_OF,Character:Juniper%27s_Mum,daughter
+Character:Sheila,IS_RELATIVE_OF,Character:Lila,mother
+Character:Lila%27s_Brother,IS_RELATIVE_OF,Character:Lila,
+Character:Bingo_Heeler,IS_FRIEND_OF,Character:Lila,best friend
+Character:Bluey_Heeler,IS_FRIEND_OF,Character:Lila,
+Character:Bandit_Heeler,IS_FRIEND_OF,Character:Lila,
+Character:Muffin_Heeler,IS_FRIEND_OF,Character:Lila,conceivably
+Character:Socks_Heeler,IS_FRIEND_OF,Character:Lila,
+Character:Chucky,IS_FRIEND_OF,Character:Lila,
+Character:Buddy,IS_FRIEND_OF,Character:Lila,
+Character:Pom_Pom,IS_FRIEND_OF,Character:Lila,
+Character:Jasper_G.,IS_FRIEND_OF,Character:Lila,
+Character:Missy,IS_FRIEND_OF,Character:Lila,
+Character:Pat,IS_RELATIVE_OF,Character:Lucky,father
+Character:Janelle,IS_RELATIVE_OF,Character:Lucky,mother
+Character:Chucky,IS_RELATIVE_OF,Character:Lucky,younger brother
+Character:Bluey_Heeler,IS_FRIEND_OF,Character:Lucky,next door neighbour
+Character:Bingo_Heeler,IS_FRIEND_OF,Character:Lucky,next door neighbour
+Character:Rusty,IS_FRIEND_OF,Character:Lucky,
+Character:Coco,IS_FRIEND_OF,Character:Lucky,
+Character:Snickers,IS_FRIEND_OF,Character:Lucky,
+Character:Honey,IS_FRIEND_OF,Character:Lucky,
+Character:Mackenzie_Border_Collie,IS_FRIEND_OF,Character:Lucky,
+Character:Chloe,IS_FRIEND_OF,Character:Lucky,
+Character:Judo,IS_FRIEND_OF,Character:Lucky,
+Character:Winton,IS_FRIEND_OF,Character:Lucky,
+Character:Buddy,IS_FRIEND_OF,Character:Lucky,
+Character:The_Terriers,IS_FRIEND_OF,Character:Lucky,
+Character:Pretzel,IS_FRIEND_OF,Character:Lucky,
+Character:Jack%27s_Dad,IS_RELATIVE_OF,Character:Lulu_Russell,
+Character:Jack%27s_Mum,IS_RELATIVE_OF,Character:Lulu_Russell,
+Character:Jack_Russell,IS_RELATIVE_OF,Character:Lulu_Russell,older brother
+Character:Mackenzie%27s_Dad,IS_RELATIVE_OF,Character:Mackenzie_Border_Collie,father
+Character:Mackenzie%27s_Mum,IS_RELATIVE_OF,Character:Mackenzie_Border_Collie,mother
+Character:Bluey_Heeler,IS_FRIEND_OF,Character:Mackenzie_Border_Collie,
+Character:Jack_Russell,IS_FRIEND_OF,Character:Mackenzie_Border_Collie,
+Character:Rusty,IS_FRIEND_OF,Character:Mackenzie_Border_Collie,
+Character:Captain,IS_FRIEND_OF,Character:Mackenzie_Border_Collie,
+Character:Honey,IS_FRIEND_OF,Character:Mackenzie_Border_Collie,
+Character:Coco,IS_FRIEND_OF,Character:Mackenzie_Border_Collie,
+Character:Chloe,IS_FRIEND_OF,Character:Mackenzie_Border_Collie,
+Character:Bingo_Heeler,IS_FRIEND_OF,Character:Mackenzie_Border_Collie,
+Character:Hercules,IS_FRIEND_OF,Character:Mackenzie_Border_Collie,
+Character:Mackenzie_Border_Collie,IS_RELATIVE_OF,Character:Mackenzie%27s_Mum,son
+Character:Mackenzie%27s_Dad,IS_RELATIVE_OF,Character:Mackenzie%27s_Mum,husband
+Character:Marcus,IS_FRIEND_OF,Character:Mackenzie%27s_Mum,
+Character:Daisy,IS_FRIEND_OF,Character:Mackenzie%27s_Mum,
+Character:Bandit_Heeler,IS_FRIEND_OF,Character:Mackenzie%27s_Mum,
+Character:Chilli_Heeler,IS_FRIEND_OF,Character:Mackenzie%27s_Mum,
+Character:Frank,IS_FRIEND_OF,Character:Mackenzie%27s_Mum,
+Character:Chloe%27s_Mum,IS_FRIEND_OF,Character:Mackenzie%27s_Mum,
+Character:Bingo_Heeler,IS_FRIEND_OF,Character:Mackenzie%27s_Mum,
+Character:Bluey_Heeler,IS_FRIEND_OF,Character:Mia,school buddy
+Character:Captain,IS_FRIEND_OF,Character:Mia,crush
+Character:Mackenzie_Border_Collie,IS_FRIEND_OF,Character:Mia,
+Character:Digger,IS_FRIEND_OF,Character:Mia,
+Character:Tiny_C.,IS_FRIEND_OF,Character:Mia,
+Character:Bingo_Heeler,IS_FRIEND_OF,Character:Missy,
+Character:Bluey_Heeler,IS_FRIEND_OF,Character:Missy,
+Character:Lila,IS_FRIEND_OF,Character:Missy,
+Character:Chucky,IS_FRIEND_OF,Character:Missy,
+Character:Jasper_G.,IS_FRIEND_OF,Character:Missy,
+Character:Buddy,IS_FRIEND_OF,Character:Missy,
+Character:Pom_Pom,IS_FRIEND_OF,Character:Missy,
+Character:Stripe_Heeler,IS_RELATIVE_OF,Character:Muffin_Heeler,father
+Character:Trixie_Heeler,IS_RELATIVE_OF,Character:Muffin_Heeler,mother
+Character:Socks_Heeler,IS_RELATIVE_OF,Character:Muffin_Heeler,younger sister
+Character:Radley_Heeler,IS_RELATIVE_OF,Character:Muffin_Heeler,uncle
+Character:Frisky_Heeler,IS_RELATIVE_OF,Character:Muffin_Heeler,aunt
+Character:Bandit_Heeler,IS_RELATIVE_OF,Character:Muffin_Heeler,uncle
+Character:Chilli_Heeler,IS_RELATIVE_OF,Character:Muffin_Heeler,aunt
+Character:Bluey_Heeler,IS_RELATIVE_OF,Character:Muffin_Heeler,cousin
+Character:Bingo_Heeler,IS_RELATIVE_OF,Character:Muffin_Heeler,cousin
+Character:Bob_Heeler,IS_RELATIVE_OF,Character:Muffin_Heeler,grandfather
+Character:Chris_Heeler,IS_RELATIVE_OF,Character:Muffin_Heeler,grandmother
+Character:Juniper,IS_FRIEND_OF,Character:Muffin_Heeler,
+Character:Bluey_Wiki#cite_note-3,IS_FRIEND_OF,Character:Muffin_Heeler,
+Character:Janelle,IS_RELATIVE_OF,Character:Pat,wife
+Character:Lucky,IS_RELATIVE_OF,Character:Pat,older son
+Character:Chucky,IS_RELATIVE_OF,Character:Pat,younger son
+Character:Bandit_Heeler,IS_FRIEND_OF,Character:Pat,
+Character:Chilli_Heeler,IS_FRIEND_OF,Character:Pat,
+Character:Stripe_Heeler,IS_FRIEND_OF,Character:Pat,
+Character:Trixie_Heeler,IS_FRIEND_OF,Character:Pat,
+Character:Wendy,IS_FRIEND_OF,Character:Pat,
+Character:Lucky,IS_FRIEND_OF,Character:Pretzel,
+Character:Indy,IS_FRIEND_OF,Character:Pretzel,
+Character:Coco,IS_FRIEND_OF,Character:Pretzel,
+Character:Snickers,IS_FRIEND_OF,Character:Pretzel,
+Character:Honey,IS_FRIEND_OF,Character:Pretzel,
+Character:Mackenzie_Border_Collie,IS_FRIEND_OF,Character:Pretzel,
+Character:Chloe,IS_FRIEND_OF,Character:Pretzel,
+Character:Judo,IS_FRIEND_OF,Character:Pretzel,
+Character:Winton,IS_FRIEND_OF,Character:Pretzel,
+Character:Buddy,IS_FRIEND_OF,Character:Pretzel,
+Character:The_Terriers,IS_FRIEND_OF,Character:Pretzel,
+Character:Bingo_Heeler,IS_FRIEND_OF,Character:Pretzel,
+Character:Bluey_Heeler,IS_FRIEND_OF,Character:Pretzel,
+Character:Frisky_Heeler,IS_RELATIVE_OF,Character:Radley_Heeler,wife
+Character:Bob_Heeler,IS_RELATIVE_OF,Character:Radley_Heeler,father
+Character:Chris_Heeler,IS_RELATIVE_OF,Character:Radley_Heeler,mother
+Character:Bandit_Heeler,IS_RELATIVE_OF,Character:Radley_Heeler,younger brother
+Character:Stripe_Heeler,IS_RELATIVE_OF,Character:Radley_Heeler,youngest brother
+Character:Chilli_Heeler,IS_RELATIVE_OF,Character:Radley_Heeler,sister-in-law
+Character:Bluey_Heeler,IS_RELATIVE_OF,Character:Radley_Heeler,oldest niece
+Character:Bingo_Heeler,IS_RELATIVE_OF,Character:Radley_Heeler,second oldest niece
+Character:Trixie_Heeler,IS_RELATIVE_OF,Character:Radley_Heeler,sister-in-law
+Character:Muffin_Heeler,IS_RELATIVE_OF,Character:Radley_Heeler,third oldest niece
+Character:Socks_Heeler,IS_RELATIVE_OF,Character:Radley_Heeler,youngest niece
+Character:Bandit_Heeler,IS_FRIEND_OF,Character:Rocko,
+Character:Rusty%27s_Dad,IS_RELATIVE_OF,Character:Rusty,
+Character:Rusty%27s_Mum,IS_RELATIVE_OF,Character:Rusty,
+Character:Digger,IS_RELATIVE_OF,Character:Rusty,older brother
+Character:Dusty,IS_RELATIVE_OF,Character:Rusty,younger sister
+Character:Bluey_Wiki#cite_note-1,IS_RELATIVE_OF,Character:Rusty,
+Character:Jack_Russell,IS_FRIEND_OF,Character:Rusty,best friend
+Character:Bluey_Heeler,IS_FRIEND_OF,Character:Rusty,
+Character:Mackenzie_Border_Collie,IS_FRIEND_OF,Character:Rusty,
+Character:Indy,IS_FRIEND_OF,Character:Rusty,
+Character:Snickers,IS_FRIEND_OF,Character:Rusty,
+Character:Coco,IS_FRIEND_OF,Character:Rusty,
+Character:Honey,IS_FRIEND_OF,Character:Rusty,
+Character:Chloe,IS_FRIEND_OF,Character:Rusty,
+Character:Pretzel,IS_FRIEND_OF,Character:Rusty,
+Character:Lucky,IS_FRIEND_OF,Character:Rusty,
+Character:Bingo_Heeler,IS_FRIEND_OF,Character:Rusty,
+Character:Rusty,IS_RELATIVE_OF,Character:Rusty%27s_Dad,younger son
+Character:Rusty%27s_Mum,IS_RELATIVE_OF,Character:Rusty%27s_Dad,wife
+Character:Digger,IS_RELATIVE_OF,Character:Rusty%27s_Dad,older son
+Character:Dusty,IS_RELATIVE_OF,Character:Rusty%27s_Dad,daughter
+Character:Snickers%27_Mum,IS_RELATIVE_OF,Character:Snickers,mother
+Character:Bluey_Heeler,IS_FRIEND_OF,Character:Snickers,
+Character:Coco,IS_FRIEND_OF,Character:Snickers,
+Character:Honey,IS_FRIEND_OF,Character:Snickers,
+Character:Chloe,IS_FRIEND_OF,Character:Snickers,
+Character:Pretzel,IS_FRIEND_OF,Character:Snickers,
+Character:Rusty,IS_FRIEND_OF,Character:Snickers,
+Character:Indy,IS_FRIEND_OF,Character:Snickers,
+Character:Pom_Pom,IS_FRIEND_OF,Character:Snickers,
+Character:Bingo_Heeler,IS_FRIEND_OF,Character:Snickers,
+Character:Stripe_Heeler,IS_RELATIVE_OF,Character:Socks_Heeler,father
+Character:Trixie_Heeler,IS_RELATIVE_OF,Character:Socks_Heeler,mother
+Character:Muffin_Heeler,IS_RELATIVE_OF,Character:Socks_Heeler,older sister
+Character:Rad_Heeler,IS_RELATIVE_OF,Character:Socks_Heeler,uncle
+Character:Frisky_Heeler,IS_RELATIVE_OF,Character:Socks_Heeler,aunt
+Character:Bandit_Heeler,IS_RELATIVE_OF,Character:Socks_Heeler,uncle
+Character:Chilli_Heeler,IS_RELATIVE_OF,Character:Socks_Heeler,aunt
+Character:Bluey_Heeler,IS_RELATIVE_OF,Character:Socks_Heeler,oldest cousin
+Character:Bingo_Heeler,IS_RELATIVE_OF,Character:Socks_Heeler,second oldest cousin
+Character:Bob_Heeler,IS_RELATIVE_OF,Character:Socks_Heeler,grandfather
+Character:Chris_Heeler,IS_RELATIVE_OF,Character:Socks_Heeler,grandmother
+Character:Trixie_Heeler,IS_RELATIVE_OF,Character:Stripe_Heeler,wife
+Character:Muffin_Heeler,IS_RELATIVE_OF,Character:Stripe_Heeler,older daughter
+Character:Socks_Heeler,IS_RELATIVE_OF,Character:Stripe_Heeler,younger daughter
+Character:Bandit_Heeler,IS_RELATIVE_OF,Character:Stripe_Heeler,older brother
+Character:Rad_Heeler,IS_RELATIVE_OF,Character:Stripe_Heeler,oldest brother
+Character:Chilli_Heeler,IS_RELATIVE_OF,Character:Stripe_Heeler,sister-in-law
+Character:Frisky_Heeler,IS_RELATIVE_OF,Character:Stripe_Heeler,sister-in-law
+Character:Bluey_Heeler,IS_RELATIVE_OF,Character:Stripe_Heeler,older niece
+Character:Bingo_Heeler,IS_RELATIVE_OF,Character:Stripe_Heeler,younger niece
+Character:Bob_Heeler,IS_RELATIVE_OF,Character:Stripe_Heeler,father
+Character:Chris_Heeler,IS_RELATIVE_OF,Character:Stripe_Heeler,mother
+Character:Pat,IS_FRIEND_OF,Character:Stripe_Heeler,
+Character:Mort_Cattle,IS_FRIEND_OF,Character:Stripe_Heeler,
+Character:Brandy_Cattle,IS_FRIEND_OF,Character:Stripe_Heeler,
+Character:The_Terriers,IS_RELATIVE_OF,Character:Terriers%27_Mum,sons
+Character:Snickers%27_Mum,IS_FRIEND_OF,Character:Terriers%27_Mum,
+Character:Cornelius,IS_FRIEND_OF,Character:Terriers%27_Mum,boyfriend
+Character:Bluey_Wiki#cite_note-1,IS_FRIEND_OF,Character:Terriers%27_Mum,
+Character:Terriers%27_Mum,IS_RELATIVE_OF,Character:The_Terriers,mother
+Character:Bluey_Heeler,IS_FRIEND_OF,Character:The_Terriers,
+Character:Indy,IS_FRIEND_OF,Character:The_Terriers,
+Character:Honey,IS_FRIEND_OF,Character:The_Terriers,
+Character:Chloe,IS_FRIEND_OF,Character:The_Terriers,
+Character:Coco,IS_FRIEND_OF,Character:The_Terriers,
+Character:Rusty,IS_FRIEND_OF,Character:The_Terriers,
+Character:Snickers,IS_FRIEND_OF,Character:The_Terriers,
+Character:Winton,IS_FRIEND_OF,Character:The_Terriers,
+Character:Pretzel,IS_FRIEND_OF,Character:The_Terriers,
+Character:Bingo_Heeler,IS_FRIEND_OF,Character:The_Terriers,
+Character:Digger,IS_FRIEND_OF,Character:Tiny_C.,
+Character:Wicket-keeper,IS_FRIEND_OF,Character:Tiny_C.,
+Character:Captain,IS_FRIEND_OF,Character:Tiny_C.,
+Character:Mia,IS_FRIEND_OF,Character:Tiny_C.,
+Character:Stripe_Heeler,IS_RELATIVE_OF,Character:Trixie_Heeler,husband
+Character:Muffin_Heeler,IS_RELATIVE_OF,Character:Trixie_Heeler,older daughter
+Character:Socks_Heeler,IS_RELATIVE_OF,Character:Trixie_Heeler,younger daughter
+Character:Bandit_Heeler,IS_RELATIVE_OF,Character:Trixie_Heeler,brother-in-law
+Character:Chilli_Heeler,IS_RELATIVE_OF,Character:Trixie_Heeler,co-sister-in-law
+Character:Bluey_Heeler,IS_RELATIVE_OF,Character:Trixie_Heeler,older niece
+Character:Bingo_Heeler,IS_RELATIVE_OF,Character:Trixie_Heeler,younger niece
+Character:Rad_Heeler,IS_RELATIVE_OF,Character:Trixie_Heeler,brother in-law
+Character:Frisky_Heeler,IS_RELATIVE_OF,Character:Trixie_Heeler,sister-in-law
+Character:Bob_Heeler,IS_RELATIVE_OF,Character:Trixie_Heeler,father-in-law
+Character:Chris_Heeler,IS_RELATIVE_OF,Character:Trixie_Heeler,mother-in-law
+Character:Pat,IS_FRIEND_OF,Character:Trixie_Heeler,
+Character:Judo,IS_RELATIVE_OF,Character:Wendy,daughter
+Character:Sheepdog,IS_RELATIVE_OF,Character:Wendy,
+Character:Bluey_Heeler,IS_FRIEND_OF,Character:Wendy,next door neighbour
+Character:Bingo_Heeler,IS_FRIEND_OF,Character:Wendy,next door neighbour
+Character:Bandit_Heeler,IS_FRIEND_OF,Character:Wendy,next door neighbour
+Character:Chilli_Heeler,IS_FRIEND_OF,Character:Wendy,next door neighbour
+Character:Pat,IS_FRIEND_OF,Character:Wendy,neighbour
+Character:Snickers%27_Mum,IS_FRIEND_OF,Character:Wendy,
+Character:Bella,IS_FRIEND_OF,Character:Wendy,
+Character:Fido,IS_RELATIVE_OF,Character:Winnie,father
+Character:Bluey_Heeler,IS_FRIEND_OF,Character:Winnie,
+Character:Bingo_Heeler,IS_FRIEND_OF,Character:Winnie,
+Character:Bandit_Heeler,IS_FRIEND_OF,Character:Winnie,
+Character:Cornelius,IS_RELATIVE_OF,Character:Winton,father
+Character:Bluey_Heeler,IS_FRIEND_OF,Character:Winton,
+Character:Bingo_Heeler,IS_FRIEND_OF,Character:Winton,
+Character:Indy,IS_FRIEND_OF,Character:Winton,
+Character:Rusty,IS_FRIEND_OF,Character:Winton,
+Character:Snickers,IS_FRIEND_OF,Character:Winton,
+Character:The_Terriers,IS_FRIEND_OF,Character:Winton,
+Character:Hercules,IS_FRIEND_OF,Character:Winton,
+Character:Mackenzie_Border_Collie,IS_FRIEND_OF,Character:Winton,
+Character:Coco,IS_FRIEND_OF,Character:Winton,
+Character:Honey,IS_FRIEND_OF,Character:Winton,
+Character:Pretzel,IS_FRIEND_OF,Character:Winton,
