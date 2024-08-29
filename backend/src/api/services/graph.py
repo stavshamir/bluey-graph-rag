@@ -24,7 +24,7 @@ class GraphService:
             cypher = f'''
             CALL db.index.vector.queryNodes("theme_index", {k}, {vector})
             YIELD node, score
-            MATCH (node)<-[:HAS_THEME]-(e:Episode)
+            MATCH (node)<-[:HAS_THEME]-(e:Episode)-[:HAS_RECAP_PART]->(r:RecapPart)
             RETURN DISTINCT 
                 e.title AS episode_title,
                 e.wiki_url AS episode_url,
@@ -32,7 +32,8 @@ class GraphService:
                 node.title AS title,
                 node.description AS description,
                 node.explanation AS explanation,
-                node.supporting_quotes as supporting_quotes,
+                node.supporting_quotes AS supporting_quotes,
+                collect(r {{ .index, .text }}) AS recap_parts,
                 score
             '''
 
@@ -45,6 +46,7 @@ class GraphService:
                     description=d['description'],
                     explanation=d['explanation'],
                     supporting_quotes=d['supporting_quotes'].split(';'),
+                    recap='\n'.join(r['text'] for r in sorted(d['recap_parts'], key=lambda x: x['index']))
                 ), d['score']
 
             records, _, _ = self._driver.execute_query(query_=cypher, database_="neo4j")
@@ -63,23 +65,4 @@ class GraphService:
             return Recap(
                 episode_title=results[0]['episode_title'],
                 parts=[r['text'] for r in results]
-            )
-
-    def find_theme_by_id(self, theme_semantic_id: str) -> Theme:
-        with self._driver.session():
-            cypher = f'''
-            MATCH (t:Theme {{id: "{theme_semantic_id}"}})
-            RETURN t LIMIT 1
-            '''
-
-            records, _, _ = self._driver.execute_query(query_=cypher, database_="neo4j")
-            d = [r.data()['t'] for r in records][0]
-            return Theme(
-                episode_title='',
-                episode_url='',
-                semantic_id=d['id'],
-                title=d['title'],
-                description=d['description'],
-                explanation=d['explanation'],
-                supporting_quotes=d['supporting_quotes'].split(';'),
             )

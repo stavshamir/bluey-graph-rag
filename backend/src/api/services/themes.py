@@ -1,6 +1,6 @@
 import json
 
-from backend.src.api.models import SimilarThemes, Theme, ThemeResponse
+from backend.src.api.models import SimilarThemes, Theme, SimilarTheme, ThemeResponse
 from backend.src.api.services.graph import GraphService
 from backend.src.api.services.llm import LlmService
 
@@ -45,26 +45,32 @@ class ThemesService:
         similar_themes = self._graph_service.find_similar_themes(theme_embedding, k)
         return SimilarThemes(self._build_themes_response(theme, similar_themes))
 
-    def get_theme_answer(self, theme: str, similar_theme_id) -> str:
-        similar_theme = self._graph_service.find_theme_by_id(similar_theme_id)
-        recap_text = self._graph_service.find_recap_by_theme_id(similar_theme_id)
+    def get_theme_answer(self, theme: str, similar_theme: Theme) -> str:
         prompt = _THEME_ANSWER_PROMPT.format(
             requested_theme=theme,
-            text=recap_text,
+            text=similar_theme.recap,
             selected_theme_title=similar_theme.title,
             selected_theme_description=similar_theme.description,
             selected_theme_explanation=similar_theme.explanation
         )
         return self._llm_service.query_gpt4o_mini(prompt, requires_json_answer=False)
 
-    def _build_themes_response(self, theme: str, similar_themes: list[(Theme, float)]) -> list[ThemeResponse]:
+    def _build_themes_response(self, theme: str, similar_themes: list[(Theme, float)]) -> list[SimilarTheme]:
         best_match_themes = self._get_best_match_theme_id(theme, [t for t, _ in similar_themes])
         return [
-            ThemeResponse(
-                theme=t,
+            SimilarTheme(
+                theme=ThemeResponse(
+                    semantic_id=t.semantic_id,
+                    episode_title=t.episode_title,
+                    episode_url=t.episode_url,
+                    title=t.title,
+                    description=t.description,
+                    explanation=t.explanation,
+                    supporting_quotes=t.supporting_quotes
+                ),
                 score=s,
                 is_best_match=t.semantic_id in best_match_themes,
-                answer=self.get_theme_answer(theme, t.semantic_id)
+                answer=self.get_theme_answer(theme, t)
             )
             for t, s in similar_themes
         ]
