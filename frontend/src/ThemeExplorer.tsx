@@ -59,11 +59,11 @@ axios.defaults.withCredentials = true;
 
 const ThemeExplorer: React.FC = () => {
   const suggestions = [
-    "The importance of cooperation",
     "Recognizing the significance of guidelines",
-    "Solving conflicts between siblings"
+    "Solving conflicts between siblings",
+    "Turning mundane tasks to games"
   ];
-  
+
   const [theme, setTheme] = useState<string>(suggestions[0]);
   const [results, setResults] = useState<APIResponse | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(false);
