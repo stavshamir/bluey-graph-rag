@@ -16,7 +16,7 @@ import {
   Chip,
   Divider
 } from '@mui/material';
-import { ExpandMore, ExpandLess, Star } from '@mui/icons-material';
+import { ExpandMore, ExpandLess } from '@mui/icons-material';
 
 interface ThemeItem {
   id: string;
@@ -74,7 +74,7 @@ const ThemeExplorer: React.FC = () => {
   };
 
   const getSimilarThemes = async (theme: string): Promise<APIResponse> => {
-    const response = await axios.post<SimilarThemesResponse>('https://bluey-graph-k5cjzeqrv-stav-shamirs-projects.vercel.app/themes/find_similar', { theme: theme });
+    const response = await axios.post<SimilarThemesResponse>('https://full-sam-stavshamir-fa5c2110.koyeb.app/themes/find_similar', { theme: theme });
 
     return {
       similarThemes: response.data.themes.map(t => ({
