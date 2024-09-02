@@ -5,9 +5,9 @@ from dataclasses import dataclass
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from services.graph import GraphService
-from services.llm import LlmService
-from services.themes import ThemesService
+from api.services.graph import GraphService
+from api.services.llm import LlmService
+from api.services.themes import ThemesService
 
 uri = os.environ["NEO4J_URI"]
 username = os.environ["NEO4J_USERNAME"]
@@ -17,12 +17,12 @@ app = FastAPI()
 
 origins = [
     "http://localhost:3000",
-    "https://stavshamir.github.io/bluey-graph-rag/"
+    "https://stavshamir.github.io"
 ]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=['*'],
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

@@ -1,8 +1,8 @@
 import json
 
-from backend.src.api.models import SimilarThemes, Theme, SimilarTheme, ThemeResponse
-from backend.src.api.services.graph import GraphService
-from backend.src.api.services.llm import LlmService
+from api.models import SimilarThemes, Theme, SimilarTheme, ThemeResponse
+from api.services.graph import GraphService
+from api.services.llm import LlmService
 
 _REFINE_PROMPT_TEMPLATE = '''
 Below is a short text describing a theme (requested theme) and a list of candidate similar themes.

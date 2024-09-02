@@ -1,6 +1,6 @@
 from neo4j import GraphDatabase
 
-from backend.src.api.models import Theme, Recap
+from api.models import Theme, Recap
 
 
 class GraphService:
