@@ -64,12 +64,3 @@ async def health():
 @app.post("/themes/find_similar")
 async def find_similar_themes(request: FindSimilarThemesRequest):
     return asdict(themes_service.find_similar_themes(request.theme))
-
-
-@app.get("/env")
-async def get_env():
-    return {
-        'uri': uri,
-        'username': username,
-        'password': password
-    }
