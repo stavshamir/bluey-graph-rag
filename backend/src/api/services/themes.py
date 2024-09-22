@@ -55,8 +55,8 @@ class ThemesService:
         )
         return self._llm_service.query_gpt4o_mini(prompt, requires_json_answer=False)
 
-    def _build_themes_response(self, theme: str, similar_themes: list[(Theme, float)]) -> list[SimilarTheme]:
-        best_match_themes = self._get_best_match_theme_id(theme, [t for t, _ in similar_themes])
+    def _build_themes_response(self, theme: str, similar_themes: list[(Theme, float)], mark_best_matches=False) -> list[SimilarTheme]:
+        best_match_themes = self._get_best_match_theme_id(theme, [t for t, _ in similar_themes]) if mark_best_matches else [False for t, _ in similar_themes]
         return [
             SimilarTheme(
                 theme=ThemeResponse(
