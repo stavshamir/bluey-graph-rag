@@ -1,3 +1,4 @@
+import logging
 import os
 from dataclasses import asdict
 from dataclasses import dataclass
@@ -14,31 +15,26 @@ username = os.environ["NEO4J_USERNAME"]
 password = os.environ["NEO4J_PASSWORD"]
 
 app = FastAPI()
-
-origins = [
-    "http://localhost:3000",
-    "https://stavshamir.github.io"
-]
-
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
+    allow_origins=[
+        "http://localhost:3000",
+        "https://stavshamir.github.io"
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
     expose_headers=['*']
 )
 
+logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s")
+logger = logging.getLogger(__name__)
+logging.getLogger("httpx").setLevel(logging.WARNING)
+
 
 @dataclass
 class FindSimilarThemesRequest:
     theme: str
-
-
-@dataclass
-class ThemeAnswerRequest:
-    theme: str
-    similar_theme_id: str
 
 
 graph_service = GraphService(uri, username, password)
@@ -63,4 +59,7 @@ async def health():
 
 @app.post("/themes/find_similar")
 async def find_similar_themes(request: FindSimilarThemesRequest):
-    return asdict(themes_service.find_similar_themes(request.theme))
+    logger.info(f"Received request: {request.theme}")
+    themes = asdict(themes_service.find_similar_themes(request.theme))
+    logger.info(f"Returning response for '{request.theme}': {themes}")
+    return themes
